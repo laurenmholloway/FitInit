@@ -1,0 +1,42 @@
+﻿@model FitInit.Models.Goal
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Goal</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.GoalName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GoalName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GoalReps)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GoalReps)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GoalUser)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GoalUser)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.GoalID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
